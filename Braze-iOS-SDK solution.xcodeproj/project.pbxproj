@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C436B20B2833F3F1004225D4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436B20A2833F3F1004225D4 /* Utilities.swift */; };
+		C45FCCEB283E2EFB002909AD /* UIViewController_Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45FCCEA283E2EFB002909AD /* UIViewController_Util.swift */; };
+		C45FCCF12840BF76002909AD /* ContentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45FCCF02840BF76002909AD /* ContentCardViewController.swift */; };
+		C482A8EF288809BA00BD265A /* AppboyUI in Frameworks */ = {isa = PBXBuildFile; productRef = C482A8EE288809BA00BD265A /* AppboyUI */; };
+		C482A8F32888159400BD265A /* ExamplePush.apn in Resources */ = {isa = PBXBuildFile; fileRef = C482A8F22888159400BD265A /* ExamplePush.apn */; };
+		C49258AA283BECB600455CE6 /* SlideUpWithOffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49258A9283BECB600455CE6 /* SlideUpWithOffsetViewController.swift */; };
+		FA63A5B624241E4F00BA856A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B524241E4F00BA856A /* AppDelegate.swift */; };
+		FA63A5B824241E4F00BA856A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B724241E4F00BA856A /* SceneDelegate.swift */; };
+		FA63A5BA24241E4F00BA856A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA63A5B924241E4F00BA856A /* ViewController.swift */; };
+		FA63A5BD24241E4F00BA856A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5BB24241E4F00BA856A /* Main.storyboard */; };
+		FA63A5BF24241E5000BA856A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5BE24241E5000BA856A /* Assets.xcassets */; };
+		FA63A5C224241E5000BA856A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C436B20A2833F3F1004225D4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C45FCCEA283E2EFB002909AD /* UIViewController_Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Util.swift; sourceTree = "<group>"; };
+		C45FCCF02840BF76002909AD /* ContentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardViewController.swift; sourceTree = "<group>"; };
+		C482A8F22888159400BD265A /* ExamplePush.apn */ = {isa = PBXFileReference; lastKnownFileType = text; path = ExamplePush.apn; sourceTree = "<group>"; };
+		C49258A9283BECB600455CE6 /* SlideUpWithOffsetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideUpWithOffsetViewController.swift; sourceTree = "<group>"; };
+		C49258AB283BF3D600455CE6 /* Braze-iOS-SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Braze-iOS-SDK.entitlements"; sourceTree = "<group>"; };
+		C4D8358D2836B4070053FFB0 /* AppboyKitLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppboyKitLibrary.xcframework; path = "Pods/Appboy-iOS-SDK/AppboyKit/AppboyKitLibrary.xcframework"; sourceTree = "<group>"; };
+		FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Braze-iOS-SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63A5B524241E4F00BA856A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA63A5B724241E4F00BA856A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA63A5B924241E4F00BA856A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA63A5BC24241E4F00BA856A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA63A5BE24241E5000BA856A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA63A5C124241E5000BA856A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA63A5C324241E5000BA856A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA63A5AF24241E4F00BA856A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C482A8EF288809BA00BD265A /* AppboyUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ACEA31C6481C22FC0DA732C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4D8358D2836B4070053FFB0 /* AppboyKitLibrary.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C45FCCEC283E2F6D002909AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C45FCCEA283E2EFB002909AD /* UIViewController_Util.swift */,
+				C436B20A2833F3F1004225D4 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C45FCCEF2840BF52002909AD /* Content-Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C45FCCF02840BF76002909AD /* ContentCardViewController.swift */,
+			);
+			path = "Content-Cards";
+			sourceTree = "<group>";
+		};
+		C49258A7283BEC8A00455CE6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C45FCCEF2840BF52002909AD /* Content-Cards */,
+				C49258A8283BEC9700455CE6 /* In-App-Messages */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C49258A8283BEC9700455CE6 /* In-App-Messages */ = {
+			isa = PBXGroup;
+			children = (
+				C49258A9283BECB600455CE6 /* SlideUpWithOffsetViewController.swift */,
+			);
+			path = "In-App-Messages";
+			sourceTree = "<group>";
+		};
+		FA63A5A924241E4F00BA856A = {
+			isa = PBXGroup;
+			children = (
+				C482A8F22888159400BD265A /* ExamplePush.apn */,
+				C45FCCEC283E2F6D002909AD /* Utilities */,
+				FA63A5B424241E4F00BA856A /* Braze-iOS-SDK */,
+				FA63A5B324241E4F00BA856A /* Products */,
+				2ACEA31C6481C22FC0DA732C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA63A5B324241E4F00BA856A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA63A5B424241E4F00BA856A /* Braze-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C49258AB283BF3D600455CE6 /* Braze-iOS-SDK.entitlements */,
+				C49258A7283BEC8A00455CE6 /* ViewController */,
+				FA63A5B524241E4F00BA856A /* AppDelegate.swift */,
+				FA63A5B724241E4F00BA856A /* SceneDelegate.swift */,
+				FA63A5B924241E4F00BA856A /* ViewController.swift */,
+				FA63A5BB24241E4F00BA856A /* Main.storyboard */,
+				FA63A5BE24241E5000BA856A /* Assets.xcassets */,
+				FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */,
+				FA63A5C324241E5000BA856A /* Info.plist */,
+			);
+			path = "Braze-iOS-SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA63A5B124241E4F00BA856A /* Braze-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63A5C624241E5000BA856A /* Build configuration list for PBXNativeTarget "Braze-iOS-SDK" */;
+			buildPhases = (
+				FA63A5AE24241E4F00BA856A /* Sources */,
+				FA63A5AF24241E4F00BA856A /* Frameworks */,
+				FA63A5B024241E4F00BA856A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Braze-iOS-SDK";
+			packageProductDependencies = (
+				C482A8EE288809BA00BD265A /* AppboyUI */,
+			);
+			productName = "Braze-iOS-SDK";
+			productReference = FA63A5B224241E4F00BA856A /* Braze-iOS-SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA63A5AA24241E4F00BA856A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Ian Abels";
+				TargetAttributes = {
+					FA63A5B124241E4F00BA856A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FA63A5AD24241E4F00BA856A /* Build configuration list for PBXProject "Braze-iOS-SDK solution" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA63A5A924241E4F00BA856A;
+			packageReferences = (
+				C482A8ED288809BA00BD265A /* XCRemoteSwiftPackageReference "braze-ios-sdk" */,
+			);
+			productRefGroup = FA63A5B324241E4F00BA856A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA63A5B124241E4F00BA856A /* Braze-iOS-SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA63A5B024241E4F00BA856A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C482A8F32888159400BD265A /* ExamplePush.apn in Resources */,
+				FA63A5C224241E5000BA856A /* LaunchScreen.storyboard in Resources */,
+				FA63A5BF24241E5000BA856A /* Assets.xcassets in Resources */,
+				FA63A5BD24241E4F00BA856A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA63A5AE24241E4F00BA856A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45FCCEB283E2EFB002909AD /* UIViewController_Util.swift in Sources */,
+				FA63A5BA24241E4F00BA856A /* ViewController.swift in Sources */,
+				FA63A5B624241E4F00BA856A /* AppDelegate.swift in Sources */,
+				C436B20B2833F3F1004225D4 /* Utilities.swift in Sources */,
+				C45FCCF12840BF76002909AD /* ContentCardViewController.swift in Sources */,
+				FA63A5B824241E4F00BA856A /* SceneDelegate.swift in Sources */,
+				C49258AA283BECB600455CE6 /* SlideUpWithOffsetViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA63A5BB24241E4F00BA856A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63A5BC24241E4F00BA856A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA63A5C024241E5000BA856A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA63A5C124241E5000BA856A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA63A5C424241E5000BA856A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA63A5C524241E5000BA856A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA63A5C724241E5000BA856A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Braze-iOS-SDK/Braze-iOS-SDK.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5RVF99DWQ;
+				INFOPLIST_FILE = "Braze-iOS-SDK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-martijn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA63A5C824241E5000BA856A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Braze-iOS-SDK/Braze-iOS-SDK.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5RVF99DWQ;
+				INFOPLIST_FILE = "Braze-iOS-SDK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Braze.Braze-iOS-SDK-martijn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA63A5AD24241E4F00BA856A /* Build configuration list for PBXProject "Braze-iOS-SDK solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63A5C424241E5000BA856A /* Debug */,
+				FA63A5C524241E5000BA856A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63A5C624241E5000BA856A /* Build configuration list for PBXNativeTarget "Braze-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63A5C724241E5000BA856A /* Debug */,
+				FA63A5C824241E5000BA856A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C482A8ED288809BA00BD265A /* XCRemoteSwiftPackageReference "braze-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/braze-inc/braze-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C482A8EE288809BA00BD265A /* AppboyUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C482A8ED288809BA00BD265A /* XCRemoteSwiftPackageReference "braze-ios-sdk" */;
+			productName = AppboyUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA63A5AA24241E4F00BA856A /* Project object */;
+}
