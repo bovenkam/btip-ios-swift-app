@@ -5,121 +5,73 @@
 //
 
 import UIKit
-import AppboyUI
-import AppboyKit
-import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    
+    static var braze: Braze? = nil
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let apiKey = "08986b62-610c-4be2-b0cd-150a8048ecfc"
-        let endpointToUse = "sondheim.braze.com"
         
-        var appboyOptions: [String: Any] {
-          return [
-            ABKEndpointKey: endpointToUse,
-            ABKMinimumTriggerTimeIntervalKey: 10,
-            ABKSessionTimeoutKey: 15
-          ]
-        }
+        // Insert Braze instance configuration here
+      
+        // Insert logging information here
         
-        Appboy.start(withApiKey: apiKey, in:application, withLaunchOptions:launchOptions, withAppboyOptions: appboyOptions)
+        // Enable logging of general SDK information (e.g. user changes, etc.)
         
+        // Create Braze instance using configuration
         
+        // Add BrazeInAppMessageUI object and set it on the Braze instance’s inAppMessagePresenter here
+
+        // Add Push Registration code here
+    
+        // Add Support for Action Buttons here
+
+        // Add delegate on current User Notification center here
         
-        //INSERT IAM UI delegate here
-        Appboy.sharedInstance()?.inAppMessageController.inAppMessageUIController?.setInAppMessageUIDelegate?(self)
+        // Add code to request authorization to display user notifications
         
-        //Add Push Notification code here
-        if #available(iOS 10, *) {
-          let center = UNUserNotificationCenter.current()
-          center.delegate = self as? UNUserNotificationCenterDelegate
-          var options: UNAuthorizationOptions = [.alert, .sound, .badge]
-          if #available(iOS 12.0, *) {
-            options = UNAuthorizationOptions(rawValue: options.rawValue | UNAuthorizationOptions.provisional.rawValue)
-          }
-          center.requestAuthorization(options: options) { (granted, error) in
-            Appboy.sharedInstance()?.pushAuthorization(fromUserNotificationCenter: granted)
-          }
-          UIApplication.shared.registerForRemoteNotifications()
-        } else {
-          let types : UIUserNotificationType = [.alert, .badge, .sound]
-          let setting : UIUserNotificationSettings = UIUserNotificationSettings(types:types, categories:nil)
-          UIApplication.shared.registerUserNotificationSettings(setting)
-          UIApplication.shared.registerForRemoteNotifications()
-        }
         
         return true
     }
     
-    //MARK: - Braze PUSH Integration
-
-    //Add register device token here
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-            //Add Register Device Token here
-            Appboy.sharedInstance()?.registerDeviceToken(deviceToken)
-        }
+        //Add Register Device Token here
     
-    //Add Push handling - didReceiveRemoteNotification here
-    func application(_ application: UIApplication,
-    didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-                                 fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-    Appboy.sharedInstance()?.register(application,
-                               didReceiveRemoteNotification: userInfo,
-                                fetchCompletionHandler: completionHandler)
     }
     
-    //Add Push handling - userNotificationCenter here
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                              didReceive response: UNNotificationResponse,
-                                withCompletionHandler completionHandler: @escaping () -> Void) {
-    Appboy.sharedInstance()?.userNotificationCenter(center,
-                                didReceive: response,
-                                  withCompletionHandler:completionHandler)
-    }
-    
-    //Add Push handling - willPresent here (allowing push to display when the app is open)
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                  willPresent notification: UNNotification,
-                                  withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-      if #available(iOS 14.0, *) {
-        completionHandler([.list, .banner]);
-      } else {
-        completionHandler([.alert]);
-      }
-    }
+    // Add Push handling - didReceiveRemoteNotification here
+ 
+    // Add Push handling - userNotificationCenter here
 
-    
 
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+
+    // Add Push handling - willPresent here
     
 }
 
 
+//MARK: - IN-APP MESSAGE PRESENTATION CUSTOMISATION
+extension AppDelegate: BrazeInAppMessageUIDelegate {
 
-// MARK: - CUSTOM VIEW CONTROLLER LOGIC HERE ABKInAppMessage UI Delegate
-extension AppDelegate: ABKInAppMessageUIDelegate {
-    func inAppMessageViewControllerWith(_ inAppMessage: ABKInAppMessage) -> ABKInAppMessageViewController? {
-    
-    switch inAppMessage {
-      case is ABKInAppMessageSlideup:
-        return SlideUpWithOffsetViewController(inAppMessage: inAppMessage)
-      case is ABKInAppMessageModal:
-          return ABKInAppMessageModalViewController(inAppMessage: inAppMessage)
-      case is ABKInAppMessageFull:
-          return ABKInAppMessageFullViewController(inAppMessage: inAppMessage)
-      case is ABKInAppMessageHTML:
-        return ABKInAppMessageHTMLViewController(inAppMessage: inAppMessage)
-      default:
-        return ABKInAppMessageViewController(inAppMessage: inAppMessage)
-      }
+  func inAppMessage(
+    _ ui: BrazeInAppMessageUI,
+    prepareWith context: inout BrazeInAppMessageUI.PresentationContext){
+    // Customize the in-app message presentation here using the context
+    let inAppMessage = context.message
+      
+    // Add conditional logic for IAM here
+        
+
     }
+
 }
+
 
 
 

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AppboyUI
 
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -27,22 +26,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var inboxButton: UIBarButtonItem!
     @IBOutlet weak var customContentCardsButton: UIBarButtonItem!
     
-    // Actions
+    // MARK: ACTIONS
     @IBAction func customContentCardClicked(_ sender: Any) {
-        //INSERT CONTENT CARD CODE HERE
-       
-
-        
     }
     
     @IBAction func inboxButtonClicked(_ sender: Any) {
-        //INSERT CONTENT CARD CODE HERE
-        let contentCards = ABKContentCardsViewController()
-        contentCards.contentCardsViewController.title = "Content Cards Title"
-        contentCards.contentCardsViewController.disableUnreadIndicator = true
-        self.present(contentCards, animated: true, completion: nil)
-
-        
+        // Insert Content Card Code here
         
     }
     
@@ -54,7 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(userIDVal)
             
             // Insert SDK Method to set External User ID
-            Appboy.sharedInstance()?.changeUser(userIDVal)
+            
         }
     }
     
@@ -65,7 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(firstNameVal)
             
             // Insert SDK Method to set First Name
-            Appboy.sharedInstance()?.user.firstName = firstNameVal
+            
         }
     }
     
@@ -76,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(lastNameVal)
             
             // Insert SDK Method to set Last Name
-            Appboy.sharedInstance()?.user.lastName = lastNameVal
+            
         }
     }
     
@@ -88,7 +77,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
              print(emailVal)
              
              // Insert SDK Method to set Email
-            Appboy.sharedInstance()?.user.email = emailVal
+            
         }
     }
     
@@ -99,6 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(phoneVal)
             
             // Insert SDK Method to set Phone
+            
         }
     }
     
@@ -109,16 +99,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             Utilities().ShowAlert(title: "Date of Birth set!", message: "With value: \(dobVal)", vc: self)
             print(dobVal)
             
-            // Insert SDK Method to set Phone
-            Appboy.sharedInstance()?.user.dateOfBirth = dobVal
+            // Insert SDK Method to set Date of Birth
+            
         }
     }
     
   
     
     // MARK: CUSTOM ATTRIBUTES
-    
-
     
     @IBAction func customAttributeSet(_ sender: Any) {
         // Below code will execute when Custom Attributes Submit button is pressed
@@ -129,7 +117,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(custAttrVal)
             
             // Insert SDK Method to log a Custom Attribute
-            Appboy.sharedInstance()?.user.setCustomAttributeWithKey(custAttrKey, andStringValue: custAttrVal)
+            
         }
     }
     
@@ -143,7 +131,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 print(eventKey)
                 Utilities().ShowAlert(title: "\(eventKey) set!", message: "With no key/value", vc: self)
                 // Insert SDK Method to log Custom Event WITHOUT an Event Property
-                Appboy.sharedInstance()?.logCustomEvent(eventKey)
                 
                 return
             }
@@ -154,7 +141,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             Utilities().ShowAlert(title: "\(eventKey) set!", message: "With key: \(propertyKey) and value: \(propertyVal)", vc: self)
             
             // Insert SDK Method to log Custom Event WITH an Event Property
-            Appboy.sharedInstance()?.logCustomEvent(eventKey, withProperties:[propertyKey:propertyVal])
             
         }
     }
@@ -168,10 +154,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
         
-        
-        //UIStackView.layer.cornerRadius = 5
-        // Do any additional setup after loading the view.
-        //addToolBar()
     }
 
 }
