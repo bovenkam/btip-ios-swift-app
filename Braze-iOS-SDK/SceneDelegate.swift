@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  Braze-iOS-SDK
 //
-//  Created by Ian Abels on 3/19/20.
-//  Copyright © 2020 Ian Abels. All rights reserved.
+//  Created by Martijn van de Bovenkamp on 17/05/2022.
+//  Copyright © 2022 Braze. All rights reserved.
 //
 
 import UIKit

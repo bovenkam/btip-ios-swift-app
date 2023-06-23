@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mzw-uh-asJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mzw-uh-asJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +41,7 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <state key="normal" title="Set"/>
                                                                 <connections>
-                                                                    <action selector="userIdSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgb-vs-qkl"/>
+                                                                    <action selector="submitUserId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgb-vs-qkl"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -66,7 +65,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                         <state key="normal" title="Set"/>
                                                                         <connections>
-                                                                            <action selector="firstNameSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjg-Az-Cj3"/>
+                                                                            <action selector="submitFirstName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjg-Az-Cj3"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -92,7 +91,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="Set"/>
                                                                         <connections>
-                                                                            <action selector="lastNameSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGI-Qh-smG"/>
+                                                                            <action selector="submitLastName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGI-Qh-smG"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -113,7 +112,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                                                         <connections>
-                                                                            <action selector="emailSubmit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="tvV-8H-GVm"/>
+                                                                            <action selector="submitEmail:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="tvV-8H-GVm"/>
                                                                         </connections>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Th-Aj-5TT">
@@ -121,7 +120,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <state key="normal" title="Set"/>
                                                                         <connections>
-                                                                            <action selector="emailSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tca-Ee-UkO"/>
+                                                                            <action selector="submitEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tca-Ee-UkO"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -142,7 +141,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
                                                                         <connections>
-                                                                            <action selector="phoneSubmit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Gfg-Zc-lau"/>
+                                                                            <action selector="submitPhonenumber:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Gfg-Zc-lau"/>
                                                                         </connections>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5q-Ao-hNt">
@@ -150,7 +149,7 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="Set"/>
                                                                         <connections>
-                                                                            <action selector="phoneSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFJ-Sk-FBu"/>
+                                                                            <action selector="submitPhonenumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFJ-Sk-FBu"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -181,7 +180,7 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <state key="normal" title="Set"/>
                                                                 <connections>
-                                                                    <action selector="dobSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5tb-G6-Qgh"/>
+                                                                    <action selector="submitDob:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5tb-G6-Qgh"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -200,7 +199,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZW-n5-zwT">
-                                <rect key="frame" x="162.5" y="252" width="89" height="20.5"/>
+                                <rect key="frame" x="156" y="248.5" width="102" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -212,12 +211,12 @@
                                     <navigationItem id="oZs-5X-wfP">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="newspaper.circle" catalog="system" id="JEr-mo-UVf">
                                             <connections>
-                                                <action selector="customContentCardClicked:" destination="BYZ-38-t0r" id="155-KB-BF8"/>
+                                                <action selector="clickedCustomInbox:" destination="BYZ-38-t0r" id="155-KB-BF8"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Inbox" image="tray.fill" catalog="system" id="RQX-9e-wg5">
                                             <connections>
-                                                <action selector="inboxButtonClicked:" destination="BYZ-38-t0r" id="vWg-wy-gV1"/>
+                                                <action selector="clickedInboxButton:" destination="BYZ-38-t0r" id="vWg-wy-gV1"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -262,13 +261,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Attributes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pL-wn-R4F">
-                                <rect key="frame" x="138" y="152" width="138.5" height="20.5"/>
+                                <rect key="frame" x="127.5" y="156" width="159" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osT-8f-I5Z">
-                                <rect key="frame" x="180" y="193" width="157" height="34"/>
+                                <rect key="frame" x="180" y="200.5" width="157" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="JW9-hy-NqN"/>
                                 </constraints>
@@ -276,7 +275,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-CN-qmR">
-                                <rect key="frame" x="180" y="243" width="157" height="34"/>
+                                <rect key="frame" x="180" y="250.5" width="157" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="Vk8-q0-ECL"/>
                                 </constraints>
@@ -284,21 +283,21 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEs-xc-D7L">
-                                <rect key="frame" x="95" y="251" width="38" height="18"/>
+                                <rect key="frame" x="95" y="255" width="38" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoY-CN-SoM">
-                                <rect key="frame" x="192" y="298" width="30" height="32"/>
+                                <rect key="frame" x="192" y="305.5" width="30" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Set"/>
                                 <connections>
-                                    <action selector="customAttributeSet:" destination="Jr8-9Q-qrW" eventType="touchUpInside" id="8TO-K8-0W9"/>
+                                    <action selector="setCustomAttribute:" destination="Jr8-9Q-qrW" eventType="touchUpInside" id="8TO-K8-0W9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lD-9m-jQZ">
-                                <rect key="frame" x="95" y="201" width="25.5" height="18"/>
+                                <rect key="frame" x="95" y="205" width="25.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -340,7 +339,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ykh-Px-7JW">
-                                <rect key="frame" x="65" y="211" width="264.5" height="120"/>
+                                <rect key="frame" x="65" y="218.5" width="264.5" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-fL-ihE">
                                         <rect key="frame" x="0.0" y="0.0" width="264.5" height="120"/>
@@ -443,15 +442,15 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpq-3q-JQb">
-                                <rect key="frame" x="192" y="361" width="30" height="32"/>
+                                <rect key="frame" x="192" y="368.5" width="30" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Set"/>
                                 <connections>
-                                    <action selector="customEventSubmit:" destination="SGZ-te-SfC" eventType="touchUpInside" id="eoK-h3-AL2"/>
+                                    <action selector="submitCustomEvent:" destination="SGZ-te-SfC" eventType="touchUpInside" id="eoK-h3-AL2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-zK-vny">
-                                <rect key="frame" x="149.5" y="152" width="115" height="20.5"/>
+                                <rect key="frame" x="141" y="156" width="132" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -504,10 +503,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="e.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="newspaper.circle" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="a.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="e.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="newspaper.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="tray.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
